@@ -12,7 +12,7 @@ async function fetchUserData() {
         const users = await response.json();
 
         // Clear the Loading Message
-        dataContainer.innerHTML = '';
+        dataContainer.innerHTML = "";
 
         // Create and Append User List
         const userList = document.createElement('ul');
@@ -25,7 +25,7 @@ async function fetchUserData() {
 
     } catch (error) {
         // Error Handling
-        dataContainer.innerHTML = '';
+        dataContainer.innerHTML = "";
         dataContainer.textContent = 'Failed to load user data.';
     }
 }
